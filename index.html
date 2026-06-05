@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ranktext – SEO &amp; GEO Content Agentur für KMUs | Ab 399 € / Monat</title>
+  <meta name="description" content="ranktext liefert KMUs fertige, SEO- &amp; GEO-optimierte Blog-Artikel. Monatlich, automatisch, kündbar. Ab 399 € / Monat. Erste Artikel in 7 Tagen.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="ranktext – Sebastian Galwas">
+  <link rel="canonical" href="https://www.ranktext.de/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ranktext – SEO &amp; GEO Content Agentur für KMUs">
+  <meta property="og:description" content="Fertige, SEO- &amp; GEO-optimierte Blog-Artikel für KMUs. Monatlich kündbar. Ab 399 € / Monat.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ranktext.de/">
+  <meta property="og:locale" content="de_DE">
+
+  <!-- No external resources loaded for DSGVO compliance -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     COOKIE BANNER (DSGVO-konform)
+════════════════════════════════════════════════════════════ -->
+<div id="cookie-banner" class="hidden" role="dialog" aria-label="Cookie-Einstellungen" aria-modal="true">
+  <p class="cookie-text">
+    <strong>Wir verwenden Cookies</strong><br>
+    Diese Website setzt funktionale Cookies, die für den Betrieb der Seite notwendig sind. 
+    Externe Dienste (Tally.so-Formular) können eigene Cookies setzen. 
+    Mehr Infos in unserer <a href="/datenschutz.html">Datenschutzerklärung</a>.
+  </p>
+  <div class="cookie-actions">
+    <button class="btn-cookie-reject" id="cookie-reject">Ablehnen</button>
+    <button class="btn-cookie-accept" id="cookie-accept">Akzeptieren</button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Hauptnavigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" aria-label="ranktext Startseite">ranktext</a>
+
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="#leistungen">Leistungen</a></li>
+      <li><a href="#prozess">Wie es funktioniert</a></li>
+      <li><a href="#preise">Preise</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
+    </ul>
+
+    <a href="https://tally.so/r/ODkbAk" class="btn btn-primary btn-sm nav-cta" 
+       target="_blank" rel="noopener noreferrer" id="nav-cta-btn">
+      Jetzt starten
+      <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════════════ -->
+<section id="hero">
+  <!-- Background orbs -->
+  <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+  <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+  <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot" aria-hidden="true"></span>
+        SEO &amp; GEO Content Agentur
+      </div>
+
+      <h1 class="hero-headline">
+        SEO-Content der rankt.<br>
+        <span class="gradient-text">Automatisch. Jeden Monat.</span>
+      </h1>
+
+      <p class="hero-sub">
+        Wir liefern KMUs fertige, SEO- &amp; GEO-optimierte Blog-Artikel. 
+        Monatlich, vollautomatisch, kündbar — ohne Jahresvertrag.
+      </p>
+
+      <div class="hero-actions">
+        <a href="https://tally.so/r/ODkbAk" 
+           class="btn btn-primary btn-lg" 
+           target="_blank" rel="noopener noreferrer"
+           id="hero-cta-primary">
+          Jetzt starten
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+        </a>
+        <a href="#preise" class="btn btn-secondary btn-lg" id="hero-cta-secondary">
+          Pakete ansehen
+        </a>
+      </div>
+
+      <div class="hero-social-proof">
+        <div class="hero-avatars" aria-hidden="true">
+          <div class="hero-avatar">MK</div>
+          <div class="hero-avatar">TW</div>
+          <div class="hero-avatar">SB</div>
+          <div class="hero-avatar">JL</div>
+        </div>
+        <div>
+          <p class="hero-proof-text"><strong>Erste Artikel in 7 Tagen</strong> nach Auftragsbestätigung</p>
+          <div class="hero-stars" aria-label="5 von 5 Sternen">★★★★★</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dashboard visual -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-dashboard">
+        <div class="hero-dash-header">
+          <span class="hero-dash-title">Content-Pipeline · Mai 2026</span>
+          <span class="hero-dash-status">Live</span>
+        </div>
+        <div class="hero-dash-metrics">
+          <div class="hero-metric">
+            <div class="hero-metric-value">+312%</div>
+            <div class="hero-metric-label">Organischer Traffic</div>
+          </div>
+          <div class="hero-metric">
+            <div class="hero-metric-value">8</div>
+            <div class="hero-metric-label">Artikel / Monat</div>
+          </div>
+          <div class="hero-metric">
+            <div class="hero-metric-value">€0</div>
+            <div class="hero-metric-label">Werbekosten</div>
+          </div>
+          <div class="hero-metric">
+            <div class="hero-metric-value">Pos. 1</div>
+            <div class="hero-metric-label">Google Ranking</div>
+          </div>
+        </div>
+        <div class="hero-article-list">
+          <div class="hero-article-item">
+            <div class="hero-article-icon">01</div>
+            <span class="hero-article-title">SEO-Content für KMUs: So rankt dein Unternehmen</span>
+            <span class="hero-article-badge">Fertig</span>
+          </div>
+          <div class="hero-article-item">
+            <div class="hero-article-icon">02</div>
+            <span class="hero-article-title">GEO-Optimierung: So wirst du in KI gefunden</span>
+            <span class="hero-article-badge">Fertig</span>
+          </div>
+          <div class="hero-article-item">
+            <div class="hero-article-icon">03</div>
+            <span class="hero-article-title">Content-Marketing für kleine Unternehmen</span>
+            <span class="hero-article-badge">In Arbeit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     TRUST / PLATFORMS
+════════════════════════════════════════════════════════════ -->
+<section id="trust" aria-labelledby="trust-heading">
+  <div class="container">
+    <div class="trust-inner">
+      <p class="trust-label" id="trust-heading">Sichtbar auf allen Plattformen</p>
+      <div class="trust-platforms">
+
+        <!-- Google Search -->
+        <div class="platform-chip">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+          </svg>
+          Google Search
+        </div>
+
+        <!-- ChatGPT -->
+        <div class="platform-chip">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"/>
+          </svg>
+          ChatGPT
+        </div>
+
+        <!-- Perplexity -->
+        <div class="platform-chip">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+            <path d="M12 2v4M12 18v4M2 12h4M18 12h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="12" cy="12" r="4" fill="currentColor" opacity="0.7"/>
+          </svg>
+          Perplexity
+        </div>
+
+        <!-- Google AI -->
+        <div class="platform-chip">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2L2 7l10 5 10-5-10-5z" fill="#4285F4" opacity="0.8"/>
+            <path d="M2 17l10 5 10-5" stroke="#34A853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 12l10 5 10-5" stroke="#FBBC05" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Google AI Overviews
+        </div>
+
+        <!-- Bing AI -->
+        <div class="platform-chip">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M5 3l4 1.5v13l7-4-3-1.5 1-5.5L5 3z" opacity="0.7"/>
+          </svg>
+          Bing Copilot
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     LEISTUNGEN
+════════════════════════════════════════════════════════════ -->
+<section id="leistungen" aria-labelledby="leistungen-heading">
+  <div class="container">
+    <header class="section-header reveal">
+      <div class="section-badge">Leistungen</div>
+      <h2 id="leistungen-heading">SEO-Content der wirklich rankt</h2>
+      <p>Wir übernehmen die komplette Content-Produktion — von der Keyword-Recherche bis zum fertigen, veröffentlichungsreifen Artikel.</p>
+    </header>
+
+    <div class="services-grid">
+
+      <article class="service-card reveal reveal-delay-1">
+        <div class="service-icon" aria-hidden="true">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/>
+          </svg>
+        </div>
+        <h3>Keyword-Recherche</h3>
+        <p>Wir analysieren Suchvolumen, Wettbewerb und Kaufabsicht für deine Branche — und wählen nur Keywords aus, bei denen du realistisch ranken kannst.</p>
+        <span class="service-tag">Inklusive in allen Paketen</span>
+      </article>
+
+      <article class="service-card reveal reveal-delay-2">
+        <div class="service-icon" aria-hidden="true">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"/>
+          </svg>
+        </div>
+        <h3>SEO-optimiertes Schreiben</h3>
+        <p>Klare Struktur, natürliche Keywords, semantische Relevanz — jeder Artikel erfüllt aktuelle Google-Anforderungen und überzeugt gleichzeitig den Leser.</p>
+        <span class="service-tag">Min. 800 Wörter pro Artikel</span>
+      </article>
+
+      <article class="service-card reveal reveal-delay-3">
+        <div class="service-icon" aria-hidden="true">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z"/>
+          </svg>
+        </div>
+        <h3>GEO für KI-Suchmaschinen</h3>
+        <p>Optimiert für ChatGPT, Perplexity und Google AI Overviews — deine Inhalte werden von KI-Systemen als vertrauenswürdige Quelle zitiert.</p>
+        <span class="service-tag">Exklusiv bei ranktext</span>
+      </article>
+
+      <article class="service-card reveal reveal-delay-1">
+        <div class="service-icon" aria-hidden="true">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/>
+          </svg>
+        </div>
+        <h3>Monatliches Reporting</h3>
+        <p>Im Standard- und Premium-Paket erhältst du jeden Monat einen klaren Performance-Report: Rankings, Traffic, Impressionen — alles auf einen Blick.</p>
+        <span class="service-tag">Standard &amp; Premium</span>
+      </article>
+
+      <article class="service-card reveal reveal-delay-2">
+        <div class="service-icon" aria-hidden="true">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"/>
+          </svg>
+        </div>
+        <h3>Landingpage pro Monat</h3>
+        <p>Im Premium-Paket erstellen wir zusätzlich eine SEO-optimierte Landingpage für deine wichtigsten Dienstleistungen oder Produkte.</p>
+        <span class="service-tag">Nur Premium</span>
+      </article>
+
+      <article class="service-card reveal reveal-delay-3">
+        <div class="service-icon" aria-hidden="true">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <h3>Pünktliche Lieferung</h3>
+        <p>Erste Artikel innerhalb von 7 Tagen nach Auftragsbestätigung. Jeden Monat pünktlich — als Word-Datei, fertig zur Veröffentlichung.</p>
+        <span class="service-tag">7-Tage-Garantie</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     PROZESS
+════════════════════════════════════════════════════════════ -->
+<section id="prozess" aria-labelledby="prozess-heading">
+  <div class="container">
+    <header class="section-header reveal">
+      <div class="section-badge">So funktioniert es</div>
+      <h2 id="prozess-heading">Von der Anfrage zum fertigen Artikel</h2>
+      <p>In 3 einfachen Schritten zu monatlichem, hochwertigem Content — ohne Aufwand deinerseits.</p>
+    </header>
+
+    <div class="process-steps">
+      <div class="process-step reveal reveal-delay-1">
+        <div class="process-number" aria-hidden="true">1</div>
+        <h3>Onboarding</h3>
+        <p>Du füllst unser kurzes Briefing-Formular aus: Branche, Zielgruppe, Tonalität, gewünschte Keywords. Das dauert 10 Minuten — einmalig.</p>
+      </div>
+
+      <div class="process-step reveal reveal-delay-2">
+        <div class="process-number" aria-hidden="true">2</div>
+        <h3>Produktion</h3>
+        <p>Unser System recherchiert, schreibt und optimiert jeden Artikel für SEO und GEO. Qualitätskontrolle inklusive — kein Keyword-Stuffing, kein Fülltext.</p>
+      </div>
+
+      <div class="process-step reveal reveal-delay-3">
+        <div class="process-number" aria-hidden="true">3</div>
+        <h3>Lieferung</h3>
+        <p>Du erhältst die fertigen Artikel als Word-Dateien per E-Mail — veröffentlichungsfertig, mit Meta-Beschreibung und internen Verlinkungsvorschlägen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     VORTEILE / STATS
+════════════════════════════════════════════════════════════ -->
+<section id="vorteile" aria-labelledby="vorteile-heading">
+  <div class="container">
+    <header class="section-header reveal">
+      <div class="section-badge">Warum ranktext</div>
+      <h2 id="vorteile-heading">Warum regelmäßiger Content wirkt</h2>
+      <p>SEO-Content ist eine Investition, die sich langfristig auszahlt — anders als Anzeigen, die stoppen, sobald das Budget aufgebraucht ist.</p>
+    </header>
+
+    <div class="stats-grid">
+      <div class="stat-card reveal reveal-delay-1">
+        <div class="stat-value" data-count="312" data-suffix="%" aria-label="Bis zu 312 Prozent">+312%</div>
+        <div class="stat-label">Mehr organischer Traffic</div>
+        <div class="stat-desc">Kunden berichten im Schnitt von einer Verdreifachung ihres organischen Traffics nach 6 Monaten.</div>
+      </div>
+
+      <div class="stat-card reveal reveal-delay-2">
+        <div class="stat-value">24/7</div>
+        <div class="stat-label">Für dich aktiv</div>
+        <div class="stat-desc">Einmal veröffentlicht, arbeitet dein Content rund um die Uhr — auch am Wochenende und im Urlaub.</div>
+      </div>
+
+      <div class="stat-card reveal reveal-delay-3">
+        <div class="stat-value">0 €</div>
+        <div class="stat-label">Zusätzliche Werbekosten</div>
+        <div class="stat-desc">Keine Google Ads, keine Meta-Kampagnen. Organischer Traffic kostet dich nach dem Setup nichts extra.</div>
+      </div>
+    </div>
+
+    <div class="benefits-split">
+      <div class="benefits-list reveal">
+        <div class="benefit-item">
+          <div class="benefit-check" aria-hidden="true">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+          </div>
+          <div>
+            <h4>Kein Jahresvertrag</h4>
+            <p>Alle Pakete sind monatlich kündbar. Du bist nie länger gebunden, als du möchtest.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-check" aria-hidden="true">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+          </div>
+          <div>
+            <h4>Erste Artikel in 7 Tagen</h4>
+            <p>Keine wochenlange Einarbeitung — du erhältst deinen ersten Content-Batch innerhalb einer Woche.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-check" aria-hidden="true">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+          </div>
+          <div>
+            <h4>SEO + GEO in einem</h4>
+            <p>Als einzige Agentur optimieren wir gleichzeitig für Google-Rankings und KI-Suchmaschinen wie ChatGPT &amp; Perplexity.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-check" aria-hidden="true">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+          </div>
+          <div>
+            <h4>Branchenspezifisch</h4>
+            <p>Kein Generic-Content. Jeder Artikel wird individuell auf deine Branche, Zielgruppe und Keywords zugeschnitten.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-2" style="display:flex;flex-direction:column;gap:16px;">
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:32px;">
+          <div style="font-size:0.85rem;color:var(--text-muted);margin-bottom:8px;">Festangestellte Content-Managerin</div>
+          <div style="font-size:2rem;font-weight:800;color:var(--text-primary);margin-bottom:4px;">3.500 € / Monat</div>
+          <div style="font-size:0.875rem;color:var(--text-secondary);">+ Sozialabgaben, Krankheitstage, Urlaubsanspruch, Equipment…</div>
+        </div>
+        <div style="text-align:center;color:var(--text-muted);font-size:0.875rem;font-weight:600;">vs.</div>
+        <div style="background:linear-gradient(135deg,rgba(124,58,237,0.12),rgba(6,182,212,0.08));border:1px solid var(--border-accent);border-radius:var(--radius-lg);padding:32px;box-shadow:var(--shadow-glow);">
+          <div style="font-size:0.85rem;color:var(--purple-light);margin-bottom:8px;">ranktext Standard-Paket</div>
+          <div style="font-size:2rem;font-weight:800;background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:4px;">499 € / Monat</div>
+          <div style="font-size:0.875rem;color:var(--text-secondary);">8 Artikel + GEO + Reporting. Monatlich kündbar. Keine versteckten Kosten.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     PREISE
+════════════════════════════════════════════════════════════ -->
+<section id="preise" aria-labelledby="preise-heading">
+  <div class="container">
+    <header class="section-header reveal">
+      <div class="section-badge">Preise</div>
+      <h2 id="preise-heading">Transparente Pakete. Kein Kleingedrucktes.</h2>
+      <p>Kein Jahresvertrag, keine Einrichtungsgebühr, keine versteckten Kosten. Du kannst jeden Monat kündigen.</p>
+    </header>
+
+    <div class="pricing-grid">
+
+      <!-- Starter -->
+      <article class="pricing-card reveal reveal-delay-1">
+        <div class="pricing-name">Starter</div>
+        <div class="pricing-price">
+          <span class="price-amount">399 €</span>
+          <span class="price-period">/ Monat</span>
+        </div>
+        <p class="pricing-tagline">Ideal für den Einstieg in SEO-Content</p>
+        <ul class="pricing-features">
+          <li class="pricing-feature">
+            <span class="pricing-feature-check" aria-hidden="true">✓</span>
+            5 SEO-optimierte Blog-Artikel / Monat
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-feature-check" aria-hidden="true">✓</span>
+            GEO-Optimierung für KI-Suchmaschinen
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-feature-check" aria-hidden="true">✓</span>
+            Keyword-Recherche inklusive
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-feature-check" aria-hidden="true">✓</span>
+            Lieferung in 7 Tagen
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-feature-check" aria-hidden="true">✓</span>
+            Word-Dateien, veröffentlichungsfertig
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-feature-check" aria-hidden="true">✓</span>
+            Monatlich kündbar
+          </li>
+        </ul>
+        <a href="https://tally.so/r/ODkbAk" class="btn btn-secondary pricing-cta" 
+           target="_blank" rel="noopener noreferrer" id="pricing-starter-btn">
+          Jetzt starten
+        </a>
+      </article>
+
+      <!-- Standard (featured) -->
+      <article class="pricing-card featured reveal reveal-delay-2">
+        <div class="pricing-badge-wrap">
+          <span class="pricing-badge">⭐ Empfohlen</span>
+        </div>
+        <div class="pricing-name">Standard</div>
+        <div class="pricing-price">
+          <span class="price-amount">499 €</span>
+          <span class="price-period">/ Monat</span>
+        </div>
+        <p class="pricing-tagline">Unser beliebtestes Paket für KMUs</p>
+        <ul class="pricing-features">
+          <li class="pricing-feature">
+            <span class="pricing-feature-check" aria-hidden="true">✓</span>
+            <strong>8 SEO-optimierte Blog-Artikel / Monat</strong>
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-feature-check" aria-hidden="true">✓</span>
+            GEO-Optimierung für KI-Suchmaschinen
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-feature-check" aria-hidden="true">✓</span>
+            Keyword-Recherche inklusive
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-feature-check" aria-hidden="true">✓</span>
+            <strong>Monatliches Performance-Reporting</strong>
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-feature-check" aria-hidden="true">✓</span>
+            Lieferung in 7 Tagen
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-feature-check" aria-hidden="true">✓</span>
+            Word-Dateien, veröffentlichungsfertig
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-feature-check" aria-hidden="true">✓</span>
+            Monatlich kündbar
+          </li>
+        </ul>
+        <a href="https://tally.so/r/ODkbAk" class="btn btn-primary pricing-cta" 
+           target="_blank" rel="noopener noreferrer" id="pricing-standard-btn">
+          Jetzt starten
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+        </a>
+      </article>
+
+      <!-- Premium -->
+      <article class="pricing-card reveal reveal-delay-3">
+        <div class="pricing-name">Premium</div>
+        <div class="pricing-price">
+          <span class="price-amount">699 €</span>
+          <span class="price-period">/ Monat</span>
+        </div>
+        <p class="pricing-tagline">Maximale Content-Sichtbarkeit</p>
+        <ul class="pricing-features">
+          <li class="pricing-feature">
+            <span class="pricing-feature-check" aria-hidden="true">✓</span>
+            <strong>12 SEO-optimierte Blog-Artikel / Monat</strong>
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-feature-check" aria-hidden="true">✓</span>
+            GEO-Optimierung für KI-Suchmaschinen
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-feature-check" aria-hidden="true">✓</span>
+            Keyword-Recherche inklusive
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-feature-check" aria-hidden="true">✓</span>
+            Monatliches Performance-Reporting
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-feature-check" aria-hidden="true">✓</span>
+            <strong>1 SEO-Landingpage / Monat</strong>
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-feature-check" aria-hidden="true">✓</span>
+            Lieferung in 7 Tagen
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-feature-check" aria-hidden="true">✓</span>
+            Monatlich kündbar
+          </li>
+        </ul>
+        <a href="https://tally.so/r/ODkbAk" class="btn btn-secondary pricing-cta" 
+           target="_blank" rel="noopener noreferrer" id="pricing-premium-btn">
+          Jetzt starten
+        </a>
+      </article>
+
+    </div>
+
+    <p class="pricing-note">
+      Alle Preise zzgl. ggf. anfallender Steuern. <strong>Keine Einrichtungsgebühr. Kein Jahresvertrag.</strong> 
+      Kleinunternehmerregelung § 19 UStG — keine MwSt. auf Rechnungen.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     FAQ
+════════════════════════════════════════════════════════════ -->
+<section id="faq" aria-labelledby="faq-heading">
+  <div class="container">
+    <header class="section-header reveal">
+      <div class="section-badge">FAQ</div>
+      <h2 id="faq-heading">Häufige Fragen</h2>
+      <p>Alles was du vor der Buchung wissen möchtest.</p>
+    </header>
+
+    <div class="faq-list" role="list">
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          Wie schnell bekomme ich die ersten Artikel?
+          <span class="faq-icon" aria-hidden="true">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Nach Auftragsbestätigung und abgeschlossenem Onboarding-Formular erhältst du deine ersten Artikel innerhalb von <strong>7 Werktagen</strong>. In den Folgemonaten werden die Artikel pünktlich zum vereinbarten Termin geliefert.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          Kann ich monatlich kündigen?
+          <span class="faq-icon" aria-hidden="true">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Ja — alle Pakete sind <strong>monatlich kündbar</strong>. Es gibt keinen Jahresvertrag und keine Mindestlaufzeit. Du kannst jederzeit mit einer Frist von 2 Wochen zum Monatsende kündigen.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          Was ist der Unterschied zwischen SEO und GEO?
+          <span class="faq-icon" aria-hidden="true">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            <strong>SEO (Search Engine Optimization)</strong> optimiert deine Inhalte dafür, bei Google auf Seite 1 zu ranken. <strong>GEO (Generative Engine Optimization)</strong> optimiert sie dafür, von KI-Systemen wie ChatGPT, Perplexity oder Google AI Overviews als Quelle zitiert zu werden. Immer mehr Suchanfragen werden direkt in KI-Assistenten gestellt — GEO ist die Sichtbarkeit der Zukunft. ranktext ist eine der ersten Agenturen, die beides kombiniert.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          Welche Branchen bedient ranktext?
+          <span class="faq-icon" aria-hidden="true">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Wir arbeiten mit <strong>KMUs aus allen Branchen</strong> — vom Handwerksbetrieb über lokale Anwälte, Ärzte und Coaches bis hin zu E-Commerce-Shops. Durch das Onboarding-Formular lernen wir deine Branche, Zielgruppe und Tonalität kennen, sodass jeder Artikel individuell auf dich zugeschnitten ist.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          Wie erhalte ich die fertigen Artikel?
+          <span class="faq-icon" aria-hidden="true">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            Du erhältst die fertigen Artikel als <strong>Word-Dateien (.docx)</strong> per E-Mail — komplett mit Überschriften-Struktur, Meta-Beschreibung, internen Verlinkungsvorschlägen und Call-to-Action. Direkt kopieren, in dein CMS einfügen und veröffentlichen.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          Wird die KI-Nutzung auf Rechnungen ausgewiesen?
+          <span class="faq-icon" aria-hidden="true">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer" role="region">
+          <div class="faq-answer-inner">
+            ranktext nutzt KI-gestützte Prozesse für die Contenterstellung — das ist Teil unseres Produktionsmodells und ermöglicht uns, Qualität zu fairen Preisen anzubieten. Jeder Artikel wird vor Lieferung menschlich geprüft und ggf. angepasst. Als Kleinunternehmen nach § 19 UStG weisen wir <strong>keine Mehrwertsteuer</strong> aus.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CTA
+════════════════════════════════════════════════════════════ -->
+<section id="kontakt" aria-labelledby="cta-heading">
+  <div class="container">
+    <div class="cta-card">
+      <div class="cta-orb cta-orb-1" aria-hidden="true"></div>
+      <div class="cta-orb cta-orb-2" aria-hidden="true"></div>
+      <h2 id="cta-heading" class="reveal">
+        Bereit für <span class="gradient-text">mehr Sichtbarkeit?</span>
+      </h2>
+      <p class="reveal">Starte mit dem Paket, das zu dir passt. Monatlich kündbar, kein Jahresvertrag — erste Artikel in 7 Tagen.</p>
+      <div class="cta-actions reveal">
+        <a href="https://tally.so/r/ODkbAk" class="btn btn-primary btn-lg" 
+           target="_blank" rel="noopener noreferrer" id="cta-main-btn">
+          Jetzt Paket anfragen
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+        </a>
+        <a href="#preise" class="btn btn-secondary btn-lg" id="cta-pricing-btn">
+          Pakete vergleichen
+        </a>
+      </div>
+      <p class="cta-guarantee">Kein Jahresvertrag · Erste Artikel in 7 Tagen · Monatlich kündbar</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════════ -->
+<footer id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a href="/" class="nav-logo" aria-label="ranktext Startseite">ranktext</a>
+        <p>SEO- &amp; GEO-Content Agentur für KMUs. Fertige Artikel, monatlich geliefert, vollautomatisch erstellt. Ab 399 € / Monat, kündbar.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/company/ranktext" class="social-link" 
+             target="_blank" rel="noopener noreferrer" aria-label="ranktext auf LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://x.com/ranktext_de" class="social-link" 
+             target="_blank" rel="noopener noreferrer" aria-label="ranktext auf X (Twitter)">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Leistungen -->
+      <div class="footer-col">
+        <h4>Leistungen</h4>
+        <ul>
+          <li><a href="#leistungen">SEO-Content</a></li>
+          <li><a href="#leistungen">GEO-Optimierung</a></li>
+          <li><a href="#leistungen">Keyword-Recherche</a></li>
+          <li><a href="#leistungen">Reporting</a></li>
+          <li><a href="#leistungen">Landingpages</a></li>
+        </ul>
+      </div>
+
+      <!-- Preise -->
+      <div class="footer-col">
+        <h4>Preise</h4>
+        <ul>
+          <li><a href="#preise">Starter – 399 €</a></li>
+          <li><a href="#preise">Standard – 499 €</a></li>
+          <li><a href="#preise">Premium – 699 €</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Rechtliches -->
+      <div class="footer-col">
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="mailto:hallo@ranktext.de">hallo@ranktext.de</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 ranktext · Sebastian Galwas · Ernst-Reuter-Str. 33–37, 50354 Hürth</p>
+      <nav class="footer-legal-links" aria-label="Rechtliche Links">
+        <a href="datenschutz.html">Datenschutzerklärung</a>
+        <a href="impressum.html">Impressum</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
